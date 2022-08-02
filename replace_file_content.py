@@ -7,10 +7,9 @@ from os.path import exists
 def findAndReplace(directory, find, replace, filepatterns):
     count = 0
     dump = open(directory + "/modify.txt", "a+")
-
     for path, dirs, files in os.walk(os.path.abspath(directory)):
         for filepattern in filepatterns:
-            for filename in fnmatch.filter(files, filepattern):
+            for filename in fnmatch.filter(files, "*"+str(filepattern)):
                 if filename == "modify.txt":
                     continue
                 print("Checking file: " + filename)
@@ -37,7 +36,7 @@ def findAndReplaceFilenames(starting_dir, string_to_replace, replacement_string,
 
     for path, dirs, files in os.walk(os.path.abspath(starting_dir)):
         for filepattern in filepatterns:
-            for filename in fnmatch.filter(files, filepattern):
+            for filename in fnmatch.filter(files, "*"+str(filepattern)):
                 if filename == "modify.txt":
                     continue
                 if exists(str(path) + '/' + str(filename)) is False:
