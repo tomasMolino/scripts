@@ -41,7 +41,7 @@
 <!-- ABOUT THE SCRIPT -->
 ## About The Script
 
-This script will help you find a word and replace it inside a directory.
+This script will help you find a word and replace it inside a directory (the one where you run the command).
 
 There are two main functionalities for this script
 
@@ -63,6 +63,11 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   pip install python
   ```
+  * Download files
+  ```sh
+  git clone https://github.com/tomasMolino/scripts.git find_replace
+  ```
+  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
