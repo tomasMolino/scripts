@@ -45,8 +45,8 @@ This script will help you find a word and replace it inside a directory (the one
 
 There are two main functionalities for this script
 
-* Find and replace a word in the files content of a directory.
-* Find and replace a word inside files names of a directory.
+* Find and replace a word in the files content of a directory or an especific file.
+* Find and replace a word inside files names of a directory or an especific file.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -84,7 +84,7 @@ This is an example of how to list things you need to use the software and how to
 Let's talk about the parameters:
 * find: Is a string, is the one that will be find inside the files of a directory.
 * replace: is a string, is the one that will replace the 'find' parameter.
-* fileExtensions: Here you list all file extensions to be changed, delimited by ","
+* fileExtensions: Here you list all file extensions to be changed, delimited by "," (if you want to change a single file, type the name and extension here, example below)
 * mode: This parameter tell the script to decide what you want to do.
 There are two options
     * place "1" if you want to change the content of the files.
@@ -121,6 +121,13 @@ want to replace between "", so that the space can be taken as a character.
 ```
 
 This will change the word "plane" with the word "car" inside the files name with .sh and .py extensions.
+
+* EXAMPLE 5:
+ ```commandline
+   python C:\Users\tm36076\find_replace_script.py simple complex simple_file.sh 2
+```
+
+This will change the word "simple" with the word "complex" inside the filename "simple_file.sh" and just that file inside the directory.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
