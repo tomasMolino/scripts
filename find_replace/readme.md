@@ -122,7 +122,7 @@ want to replace between "", so that the space can be taken as a character.
 
 This will change the word "plane" with the word "car" inside the files name with .sh and .py extensions.
 
-* EXAMPLE 5:
+* EXAMPLE 5: (CHANGE SINGLE FILE MODE)
  ```commandline
    python C:\Users\tm36076\find_replace_script.py simple complex simple_file.sh 2
 ```
